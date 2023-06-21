@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="dashboard.js"></script>
+    
+</head> 
+<style>
+    body {
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    /* Efek hover untuk grafik */
+    #chart1:hover {
+        background-color: lightgray;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    #chart2:hover {
+        background-color: lightgray;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    #chart3:hover {
+        background-color: lightgray;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    #chart4:hover {
+        background-color: lightgray;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+ 
+    /* Animasi fade-in untuk grafik */
+    .card-body {
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    /* Animasi judul navbar */
+    .navbar-brand {
+        animation: fadeInOut 2s ease-in-out infinite;
+    }
+
+    @keyframes fadeInOut {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
+    }
+</style>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">
+            <i class="fas fa-chart-line">Food Sales</i> 
+
+            <right><p class="navbar-brand mb-0 text-right" style="font-size: 12pt">
+                bySyafrillah Najjar</p></right>
+        </span>
+    </nav>    
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Grafik 1</div>
+                    <div class="card-body">
+                        <div id="chart1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Grafik 2</div>
+                    <div class="card-body">
+                        <div id="chart2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Grafik 3</div>
+                    <div class="card-body">
+                        <div id="chart3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Grafik 4</div>
+                    <div class="card-body">
+                        <div id="chart4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="chart2"></div>
+    <!-- Tambahkan lebih banyak elemen div untuk grafik lainnya -->
+</body>
+
+
+</html>
